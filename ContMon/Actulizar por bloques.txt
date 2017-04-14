@@ -1,0 +1,38 @@
+
+    Private Sub actualizar()
+        Dim numReg As Integer = Nothing 'Cantidad de registros a modificar
+        Dim numRep As Integer = Nothing 'Variable para conocer el numero de repeticiones para la consulta de actualizacion
+        Dim iNum As Integer = Nothing 'Variable para averiguar si se necesita realizar una repeticion extra
+        'sqlCount extrae la cantidad de registros que van a ser movidos de lugar
+        Dim sqlCount As String = "SELECT COUNT(*) FROM laminas WHERE dep = '" & BoxDep.Text & "' AND num > " & NumUp.Value & " LIMIT 1"
+        'sql es la consulta para realizar el movimiento, ya que esta variable cambia para realizar movimientos 
+        'en lotes de 25 se inicializa en  nada "Nothing"
+        Dim sql As String = Nothing
+        Dim cmd As New MySqlCommand(sqlCount, cnx)
+        cnx.Open()
+        Dim lec As MySqlDataReader = cmd.ExecuteReader
+        lec.Read()
+        numReg = NumUp.Value + lec(0)
+        numRep = lec(0) / 25
+        iNum = lec(0) Mod 25
+        cnx.Close()
+        If (numReg - 24) < 0 Then
+            For i As Integer = 1 To numRep
+                sql = "UPDATE laminas SET num = (num + 1) WHERE dep = '" & BoxDep.Text & "' AND num BETWEEN " & (numReg - 24) & _
+                    " AND " & numReg
+                numReg -= 25
+                cmd.CommandText = sql
+                cnx.Open()
+                cmd.ExecuteNonQuery()
+                cnx.Close()
+            Next
+        End If
+        If iNum <> 0 Then
+            sql = "UPDATE laminas SET num = (num + 1) WHERE dep = '" & BoxDep.Text & "' AND num BETWEEN " & (numReg - iNum) & _
+                " AND " & numReg
+            cmd.CommandText = sql
+            cnx.Open()
+            cmd.ExecuteReader()
+            cnx.Close()
+        End If
+    End Sub

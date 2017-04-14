@@ -1,0 +1,126 @@
+
+    Private Sub bntSearch_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSearch.Click
+        If txtName.Text <> "" Then
+            Try
+                Cursor = Cursors.WaitCursor
+                If Exist() Then
+                    pos()
+                    NumUp.Enabled = True
+                    btnAdd.Enabled = True
+                Else
+                    MsgBox("Ya existe el nombre." & vbCr & "Inserte otro nombre para la monografía.", _
+                    vbOKOnly, "Nombre ya existente")
+                End If
+                Cursor = Cursors.Default
+            Catch ex As Exception
+                Cursor = Cursors.Default
+                cnx.Close()
+                MsgBox(ex.Message, MsgBoxStyle.Critical, "Error")
+            End Try
+        Else
+            Cursor = Cursors.Default
+            MsgBox("Es necesario introducir el nombre.", vbCritical, "Falta el nombre")
+        End If
+    End Sub
+    Private Function Exist() As Boolean
+        Dim sql As String = "SELECT * FROM laminas WHERE nombre = '" & txtName.Text & "' AND dep = '" & BoxDep.Text & "'"
+        Dim cmd As New MySqlCommand(sql, cnx)
+        cnx.Open()
+        Dim lectura As MySqlDataReader = cmd.ExecuteReader
+        If lectura.Read Then
+            cnx.Close()
+            Return False
+        Else
+            cnx.Close()
+            Return True
+        End If
+    End Function
+    Private Sub pos()
+        Dim Repetir As Boolean = True
+        Dim Extension As Integer = txtName.TextLength
+        Dim Nombre As String = txtName.Text.Substring(0, Extension)
+        Dim sql As String = "SELECT nombre, num FROM laminas WHERE nombre like '" & Nombre & "%' AND dep = '" & BoxDep.Text & "' ORDER BY nombre"
+        Dim cmd As New MySqlCommand(sql, cnx)
+
+        Do While Repetir
+            cnx.Open()
+            Dim lectura As MySqlDataReader = cmd.ExecuteReader
+            If lectura.Read Then
+                Repetir = False
+                Introducir_Inf(lectura)
+            Else
+                If Extension > 1 Then
+                    Extension -= 1
+                    Nombre = txtName.Text.Substring(0, Extension)
+                    sql = "SELECT nombre, num FROM laminas WHERE nombre BETWEEN '" & Nombre & "%' AND '" & txtName.Text.Substring(0, Extension + 1) & "%' AND dep = '" & BoxDep.Text & "' ORDER BY nombre"
+                    cmd.CommandText = sql
+                Else
+                    cnx.Close()
+                    Repetir = False
+                    Buscar_Nombre_Diferente()
+                End If
+            End If
+            cnx.Close()
+        Loop
+    End Sub
+    Private Sub Introducir_Inf(lectura As MySqlDataReader)
+        Dim posicion As Integer = Nothing
+        posicion = lectura("num")
+        Dim Conteo As Integer = 1
+        Dim Comparacion(0) As String
+        Comparacion(0) = lectura("nombre")
+        Do While lectura.Read
+            ReDim Preserve Comparacion(Conteo)
+            Comparacion(Conteo) = lectura("nombre")
+            Conteo += 1
+        Loop
+        ReDim Preserve Comparacion(Conteo)
+        Comparacion(Conteo) = txtName.Text
+        Array.Sort(Comparacion)
+        If Comparacion(0).Equals(txtName.Text) Then
+            NumUp.Value = posicion
+        Else
+            NumUp.Value = posicion + Conteo
+        End If
+    End Sub
+    Private Sub Buscar_Nombre_Diferente()
+        Dim Alfabeto As String = "0123456789ÁABCDÉEFGHÍIJKLMNÑÓOPQRSTÚUVWXYZ"
+        Dim Caracter As String = txtName.Text.Chars(0)
+        Dim Buscar As Boolean = True
+        Dim Restas As Integer = 1
+        If Caracter.ToUpper <> "0" Then
+            Dim nombre As String = Alfabeto.Chars(Alfabeto.IndexOf(Caracter.ToUpper))
+            Dim sql As String = "SELECT nombre, num FROM laminas WHERE nombre like '" & nombre & "%' AND dep = '" & BoxDep.Text & "' ORDER BY nombre DESC;"
+            Dim cmd As New MySqlCommand(sql, cnx)
+
+            Do While Buscar
+                If nombre <> "0" Then
+                    cnx.Open()
+                    Dim lectura As MySqlDataReader = cmd.ExecuteReader
+                    If lectura.Read Then
+                        Buscar = False
+                        NumUp.Value = lectura("num") + 1
+                    Else
+                        nombre = Alfabeto.Chars((Alfabeto.IndexOf(Caracter.ToUpper)) - Restas)
+                        sql = "SELECT nombre, num FROM laminas WHERE nombre like '" & nombre & "%' AND dep = '" & BoxDep.Text & "' ORDER BY nombre DESC;"
+                        cmd.CommandText = sql
+                    End If
+                    cnx.Close()
+                    Restas += 1
+                Else
+                    Buscar = False
+                    cmd.Parameters.AddWithValue("@nombre", nombre)
+                    cnx.Open()
+                    Dim lectura As MySqlDataReader = cmd.ExecuteReader
+                    If lectura.Read Then
+                        NumUp.Value = lectura("num") + 1
+                    Else
+                        NumUp.Value = 1
+                    End If
+                    cnx.Close()
+                End If
+            Loop
+        Else
+            NumUp.Value = 1
+        End If
+    End Sub
