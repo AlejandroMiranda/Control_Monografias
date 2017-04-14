@@ -1,0 +1,100 @@
+!-> Version 1.0.4.8 Terminada
+*Se comenzara a realizar la documentación del sistema para continuar a la propaganda.
+-->Mejoras:
+-Se incluyo la activación del producto y cambio de licencias
+-Incluye asociación con los dos tipos de archivo .kcm (licencia) y .pkm (peticion)
+-Se corrigio error en boton Agotado
+-Se separo el proyecto de validación y sistema principal (control de monografías)
+
+
+-> 18/03/2015
+*A falta de experiencia se sigue trabajando con la asociación para la extención nueva tipo pkm (Petición Key Monografias).
+
+
+-> 17/03/2015
+*Se trabajo sobre la creación de la extensión .pkm para generar las peticiones de llaves.
+*Se creo el icono para el .pkm desde gimp
+
+-> 09/03/2015
+*Se trabajo los recursos para cambiar la BD y se corrijio falla en leyenda "Agotado".
+*Se empezo a crear la validación y creación de las llaves [Programa diseñado para mi]
+
+->13/02/2015
+*Se detecto que el tipo VARCHAR para contener las palabras claves del sistema es demaciado pequeño para contener todos los caracteres necesario para este campo por lo que se cambiara a TEXT para aumentar el espacio en la Base de Datos para este campo
+
+->12/02/2015
+*Se incio el proyecto para crear las llaves de activacion del sistema
+
+->29/01/2015
+*Se integro un menu contextual en el elemento img (es un PictureBox) que contiene la opcion de descargar, modificar o eliminar la imagen actual seleccionada en el listbox1.
+*Se corrigio la falla sobre el contenedor NumUp de los formulario DeleteLaminas y Modificar en el cual la propiedad Anchor estaba mal configurada.
+*Se encontro un error al momento de tener dos laminas con el mismo nombre, probocando que al intentar acceder a ella para modificar o eliminar esta lamina solo proporciona una y no alcanza a mostrar la demas. [Se necesita reintegrar la restrincion sobre las laminas con el mismo nombre]
+*Se modifico el formulario Modifica ya que al intentar obtener la informacion de las laminas no se especificaba el departamento y este es importante para obtener la informacion de ella
+
+-> 26/01/2015
+*Me equivoque con las letras en la numeración de las monografias por lo que volvi a poner en modo numerico el numero de la lamina.
+
+-> 25/01/2015
+*Empece a realizar las modificaciones para utilizar el numero que traen las monografias y no utilizar una numeriación basada en el orden alfabetico de ellas.
+*Se han modificado la mayoria de los formularios (AddLamina, DeleteLaminas, Principal, Modificar) para no actualizar ni modificar la numeracion del campo num y poder integrar laminas con el mismo nombre.
+*Se ha modificado el campo num de la base de datos para que sea de tipo Varchar y así poder indtroducir caracteres alfanumericos para las monografias con guines y letras.
+
+-> 20/01/2015
+*Se empezo a integrar el desplazamiento con las flechas en el formulario principal para evitar dar doble click sobre las laminas buscadas. Para esto simplemente se cambio el evento DoubleClick por SelectedIndexChanger.
+*Como en el formulario DeleteLaminas también realiza un proceso de actualizacion realizado en el formulario AddLaminas para el ordenamiento numerico de las laminas es necesario implementar la subrutina de actualizacion parecida al del formulario AddLaminas.
+*Para que el sistema pueda funcionar de manera eficas es necesario modificar el my.ini de mysql alojado en 'C:\xampp\mysql\bin\my.ini', se integro una subrutina en el modulo Global el cual supervisa que exista el cambio de los valores en dicho archivo y se ejecuta cada vez al iniciar el sistema.
+*Se modifico el formulario de Activacion ya que al encriptar el valor de la fecha de duracion del sistema no podia expedir la cantidad de dias restantes para el periodo de prueba del sistema.
+*Modifique el archivo Estructura.sql de My_Resource ya que la estructura de la base de datos a cambiado bastante.
+
+-> 19/01/2015
+*Se termino la segmentacion de la actualizacion de los numero para que se este actualizando en paquete de 25 registros
+
+-> 17/01/2015
+*Estoy modificando los valores de los registros para incrementar la seguridad de la información manejada en el sistema y encriptar los valores como la fecha de prueba.
+*Modifique la base de datos integrando el campo num como un indice para optimizar las sentencias UPDATE y realizar las modificaciones de este campo con mayor velocidad y también poder segmentar la consulta en varias y así mismo realizar un mayor aumento en esta misma parte.
+*Quedo mal modificado la subrutina "actualizar()" para realizar actualizaciones de 50 en 50 para agilizar la actualizacion de la enumeración.
+
+-> 09/01/2015
+*Estoy implementando el formulario para la activacion de la licencia del software, inserte un nuevo formulario llamado Activacion.
+*Queda mucho por realizar para la parte de validación y activación del software pero por ahora dejare esa parte así para enfocarme en la implementación de un boton para indicar si existe la lamina en existencia o se agoto.
+
+-> 08/01/2015
+*Modifique la insercción del registro HKEY_CURRENT_USER\Software\[Title] por HKEY_CURRENT_USER\Software\Cnt Monografias ya que al instalar el programa no se creaba el registro
+*Continue con la modificacion de la lectura de los departamentos suspendida el dia 3 de enero de 2015.
+*Modifique el inicio de la aplicacion para realizar la validación de la licencia del programa. Se integro Activacion, GetMacAddress y getMacRegistro y poder detectar si se realizo la activación del software, si existe el registro de la fecha de instalación y tiempo restante de prueba.
+
+-> 06/01/2015
+*Se modifico el formulario Base_Datos para integrar un boton en el cual se abre el puerto 3306, se modifica httpd-xampp.conf y se reinician los servicios mysql y apache. Para que no se este creando varias veces la apertura del puerto 3306 se crea un registro en el regedit para saber si ya se abrio.
+*Se Integro el motodo para eliminar las modificaciones para la intereccion en modo servidor del programa
+
+-> 3/01/2015
+*modificar dep (Suspendido por emergencia)
+
+
+!-> VERSION 1.0.4 Terminada... #01-01-2015 12:00 p.m.#
+
+-> 1/1/15
+*Inserte una subrutina en Global para cuando no exista la base de datos se cree en ese mismo instante
+*Cree el formulario Listado para observar el acomodo de las laminas
+*Modifique el formulario de Base_Datos para que al importar una base se vea la informacion
+
+->31/12/14
+*Modifique el formualrio de Base_Datos y ya crea y lee resplados de la base de datos.
+
+->30/12/14
+*Inserte el formulario Base_Datos al proyecto y realice pruebas con la función shell para ejecutar desde la consola el mysqldump y crear los respaldos de la base de datos.
+
+->29/12/14
+*Modifique el DoubleClick_ListBox para que se desabilite el listbox1 mientras se ingresa los datos de la lamina
+
+->26/12/2014
+*Modifique el formulario Modificar para que se pueda cambiar el nombre de las laminas
+*Integre en el boton de AddLam del formualrio AddLaminas el cursor en espera y desabilite el boton mientras se realiza la opercion
+
+->25/12/2014
+*Modifique el formulario de Modificar, integre el auto seleccionamiento de posición y la actualización para el acomodo de los numero al moverse entre departamentos
+*Se integro la selección de departamento a la zona de busqueda de la monografia en los formularios DeleteLaminas y Modificar
+
+->24/12/2014
+*Se implemento el seccionamiento por departamentos para poder contener varios temas [Laminas, Bibliografias, Pastas, ect] en el mismo sistema y que estos queden divididos.
+*Se completo la insercción de los departamentos de los Formularios: Principal y AddLaminas.

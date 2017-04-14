@@ -1,0 +1,6 @@
+-> 25/06/2015
+*Se integro a la BD inventario, al igual que en la ventana principal se activo el boton para realizar la venta y 
+
+-> 23/06/2015
+*Se inicia nueva versión con especificaciones segun el maestro de proyectos Sosa.
+*Se incluirá inventarios, venta, localización, mejoramiento del entorno.

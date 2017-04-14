@@ -1,0 +1,18 @@
+*Ventana principal
+*Agregar monografias
+*Modificar Monografias
+	-Utilizar el buscador
+*Eliminar monografias
+	-Utilizar el buscador
+
+*Lista de laminas
+	-Ver agotados
+*Exportar e importar base de datos
+	-Exportar
+	-Importar
+	-Activar modo servidor
+	-Activar conexión remota
+*Licencia
+	-Pedir activador
+	-Activar
+	-Cambiar licencia de maquina
