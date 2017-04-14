@@ -1,0 +1,11 @@
+D:\Documentos\Programas a vender\Monografias\CntMon\Activador\obj\x86\Debug\Activador.Activacion.resources
+D:\Documentos\Programas a vender\Monografias\CntMon\Activador\obj\x86\Debug\Activador.Resources.resources
+D:\Documentos\Programas a vender\Monografias\CntMon\Activador\obj\x86\Debug\Activador.vbproj.GenerateResource.Cache
+D:\Documentos\Programas a vender\Monografias\CntMon\Activador\bin\Debug\Activador.exe
+D:\Documentos\Programas a vender\Monografias\CntMon\Activador\bin\Debug\Activador.pdb
+D:\Documentos\Programas a vender\Monografias\CntMon\Activador\bin\Debug\Activador.xml
+D:\Documentos\Programas a vender\Monografias\CntMon\Activador\obj\x86\Debug\Activador.exe
+D:\Documentos\Programas a vender\Monografias\CntMon\Activador\obj\x86\Debug\Activador.xml
+D:\Documentos\Programas a vender\Monografias\CntMon\Activador\obj\x86\Debug\Activador.pdb
+D:\Documentos\Programas a vender\Monografias\CntMon\Activador\obj\x86\Debug\Activador.InfoSolicitud.resources
+D:\Documentos\Programas a vender\Monografias\CntMon\Activador\obj\x86\Debug\Activador.Cambio_Lic.resources
