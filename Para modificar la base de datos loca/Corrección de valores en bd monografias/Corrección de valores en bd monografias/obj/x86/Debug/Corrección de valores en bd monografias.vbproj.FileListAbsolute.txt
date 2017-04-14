@@ -1,0 +1,13 @@
+C:\Users\Miranda\AppData\Local\Temporary Projects\Corrección de valores en bd monografias\bin\Debug\Corrección de valores en bd monografias.exe
+C:\Users\Miranda\AppData\Local\Temporary Projects\Corrección de valores en bd monografias\bin\Debug\Corrección de valores en bd monografias.pdb
+C:\Users\Miranda\AppData\Local\Temporary Projects\Corrección de valores en bd monografias\bin\Debug\Corrección de valores en bd monografias.xml
+C:\Users\Miranda\AppData\Local\Temporary Projects\Corrección de valores en bd monografias\obj\x86\Debug\Corrección_de_valores_en_bd_monografias.Form1.resources
+C:\Users\Miranda\AppData\Local\Temporary Projects\Corrección de valores en bd monografias\obj\x86\Debug\Corrección_de_valores_en_bd_monografias.Resources.resources
+C:\Users\Miranda\AppData\Local\Temporary Projects\Corrección de valores en bd monografias\obj\x86\Debug\Corrección de valores en bd monografias.vbproj.GenerateResource.Cache
+C:\Users\Miranda\AppData\Local\Temporary Projects\Corrección de valores en bd monografias\obj\x86\Debug\Corrección de valores en bd monografias.exe
+C:\Users\Miranda\AppData\Local\Temporary Projects\Corrección de valores en bd monografias\obj\x86\Debug\Corrección de valores en bd monografias.xml
+C:\Users\Miranda\AppData\Local\Temporary Projects\Corrección de valores en bd monografias\obj\x86\Debug\Corrección de valores en bd monografias.pdb
+C:\Users\Miranda\AppData\Local\Temporary Projects\Corrección de valores en bd monografias\bin\Debug\MySql.Data.dll
+D:\Documentos\Programas a vender\Monografias\Para modificar la base de datos loca\Corrección de valores en bd monografias\Corrección de valores en bd monografias\obj\x86\Debug\Corrección de valores en bd monografias.exe
+D:\Documentos\Programas a vender\Monografias\Para modificar la base de datos loca\Corrección de valores en bd monografias\Corrección de valores en bd monografias\obj\x86\Debug\Corrección de valores en bd monografias.xml
+D:\Documentos\Programas a vender\Monografias\Para modificar la base de datos loca\Corrección de valores en bd monografias\Corrección de valores en bd monografias\obj\x86\Debug\Corrección de valores en bd monografias.pdb
