@@ -1,0 +1,30 @@
+C:\Users\Miranda\AppData\Local\Temporary Projects\Monografias\bin\Debug\Monografias.exe
+C:\Users\Miranda\AppData\Local\Temporary Projects\Monografias\bin\Debug\Monografias.pdb
+C:\Users\Miranda\AppData\Local\Temporary Projects\Monografias\bin\Debug\Monografias.xml
+C:\Users\Miranda\AppData\Local\Temporary Projects\Monografias\obj\x86\Debug\Monografias.Cargar.resources
+C:\Users\Miranda\AppData\Local\Temporary Projects\Monografias\obj\x86\Debug\Monografias.Resources.resources
+C:\Users\Miranda\AppData\Local\Temporary Projects\Monografias\obj\x86\Debug\Monografias.vbproj.GenerateResource.Cache
+C:\Users\Miranda\AppData\Local\Temporary Projects\Monografias\obj\x86\Debug\Monografias.exe
+C:\Users\Miranda\AppData\Local\Temporary Projects\Monografias\obj\x86\Debug\Monografias.xml
+C:\Users\Miranda\AppData\Local\Temporary Projects\Monografias\obj\x86\Debug\Monografias.pdb
+C:\Users\Miranda\AppData\Local\Temporary Projects\Monografias\bin\Debug\MySql.Data.dll
+C:\Users\Miranda\AppData\Local\Temporary Projects\Monografias\obj\x86\Debug\Monografias.principal.resources
+C:\Users\Miranda\AppData\Local\Temporary Projects\Monografias\obj\x86\Debug\Monografias.Cnx_Remota.resources
+D:\Documentos\Programas a vender\Monografias\Monografias\obj\x86\Debug\Monografias.exe
+D:\Documentos\Programas a vender\Monografias\Monografias\obj\x86\Debug\Monografias.xml
+D:\Documentos\Programas a vender\Monografias\Monografias\obj\x86\Debug\Monografias.pdb
+D:\Documentos\Programas a vender\Monografias\Monografias\bin\Debug\Monografias.exe
+D:\Documentos\Programas a vender\Monografias\Monografias\bin\Debug\Monografias.pdb
+D:\Documentos\Programas a vender\Monografias\Monografias\bin\Debug\Monografias.xml
+D:\Documentos\Programas a vender\Monografias\Monografias\bin\Debug\MySql.Data.dll
+D:\Documentos\Programas a vender\Monografias\Monografias\obj\x86\Debug\Monografias.Cnx_Remota.resources
+D:\Documentos\Programas a vender\Monografias\Monografias\obj\x86\Debug\Monografias.Resources.resources
+D:\Documentos\Programas a vender\Monografias\Monografias\obj\x86\Debug\Monografias.principal.resources
+D:\Documentos\Programas a vender\Monografias\Monografias\obj\x86\Debug\Monografias.vbproj.GenerateResource.Cache
+D:\Documentos\Programas a vender\Monografias\Monografias\obj\x86\Debug\Monografias.AddLaminas.resources
+D:\Documentos\Programas a vender\Monografias\Monografias\obj\x86\Debug\Monografias.Modificar.resources
+D:\Documentos\Programas a vender\Monografias\Monografias\obj\x86\Debug\Monografias.DeleteLaminas.resources
+D:\Documentos\Programas a vender\Monografias\Monografias\bin\Debug\Monografias.exe.config
+D:\Documentos\Programas a vender\Monografias\Monografias\obj\x86\Debug\Monografias.Base_Datos.resources
+D:\Documentos\Programas a vender\Monografias\Monografias\obj\x86\Debug\Monografias.Listado.resources
+D:\Documentos\Programas a vender\Monografias\Monografias\obj\x86\Debug\Monografias.Activacion.resources

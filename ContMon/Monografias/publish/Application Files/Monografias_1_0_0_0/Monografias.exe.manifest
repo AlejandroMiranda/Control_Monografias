@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Monografias.exe" version="1.0.0.0" publicKeyToken="8fddf3a00fb03f0a" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="Resources\Ico.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Monografias" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="Monografias.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- Opciones del manifiesto de Control de cuentas de usuario
+             Si desea cambiar el nivel de Control de cuentas de usuario de Windows, reemplace el 
+             nodo requestedExecutionLevel por alguno de los siguientes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            La especificación del nodo requestedExecutionLevel deshabilitará la virtualización de archivos y del Registro.
+            Si desea usar la virtualización de archivos y del Registro para la compatibilidad 
+            con versiones anteriores, elimine el nodo requestedExecutionLevel.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Monografias.exe" size="247808">
+      <assemblyIdentity name="Monografias" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>9xNZ2NQyy0afxwqlEv0z/pFfyH8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MySql.Data.dll" size="438272">
+      <assemblyIdentity name="MySql.Data" version="6.7.4.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>fQzv7UK7JdyYPYs8iwbmzVS4mZc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Monografias.exe.config" size="2122">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>W356lf58PZcoyqKFVDl4qZ51xdQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\Ico.ico" size="49282">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>vTucKC7J9AIbzFUShke9qhGwCPE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- Lista de todas las versiones de Windows con las que esta aplicación está diseñada para funcionar. Windows seleccionará automáticamente el entorno de mayor compatibilidad.-->
+      <!-- Si la aplicación está diseñada para funcionar con Windows 7, quite los comentarios del siguiente nodo supportedOS-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=Miranda-PC\Miranda" issuerKeyHash="46efd4407c5deee26aa817e7fef2172fcc631ca2" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>+AnpETYgdaIS1dOcVkB5ZY0O8eY=</DigestValue></Reference></SignedInfo><SignatureValue>LBFbGT78cTHcdpV0WS+NT9nEMuvxQF7R5Q+0mn2NgyYn642VLPph8AyOMQHmxzuSzj1q35toS22ReQM+ENY5KbpFBaQ7iqXGXPCO44yDOcD3J/bNgxhXmPkfgbDuvwHaVxDuAPKp9D5pGuST34F8kf8Ljlax77f/u/Te8PUi6T8=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>xl+tS9BFH1AW9N/VIyeZUIiJQqCRFUwi9haLzaGKegWVihKr+q3BIcfmb14lXYbmFYjBcgjCVC9fvqR8azvBNFy8Or48mKQLSshuJsynmXkl+i68+6FjPg/sJLuroKNFy02FCud1YIquV+vxTUeA/5wV0Po5lMgU/iYv4olRO9c=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="e6f10e8d657940569cd3d512a275203611e909f8" Description="" Url=""><as:assemblyIdentity name="Monografias.exe" version="1.0.0.0" publicKeyToken="8fddf3a00fb03f0a" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Miranda-PC\Miranda</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>NkmN2bnc1tYjEUe5IVcnBIWmQhI=</DigestValue></Reference></SignedInfo><SignatureValue>cbZHsIAlIdcW9RRy5ynMTS1qloxq+RYkAx4E2R76Rp7H7mae2SJNFoil8RNGFbCALR0uxG1T/diCFtjUdYM9PHjhOHLtD2Q3Xz3qRiOZakCfBB6QEBn7jmPLaNaI4VR+aCafC3LcWTT+B3LB4zEOkpAW1297A7sXrZV++d18WaQ=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>xl+tS9BFH1AW9N/VIyeZUIiJQqCRFUwi9haLzaGKegWVihKr+q3BIcfmb14lXYbmFYjBcgjCVC9fvqR8azvBNFy8Or48mKQLSshuJsynmXkl+i68+6FjPg/sJLuroKNFy02FCud1YIquV+vxTUeA/5wV0Po5lMgU/iYv4olRO9c=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB4TCCAUqgAwIBAgIQJHE/S3fpRahFhBbPcACirjANBgkqhkiG9w0BAQUFADAvMS0wKwYDVQQDHiQATQBpAHIAYQBuAGQAYQAtAFAAQwBcAE0AaQByAGEAbgBkAGEwHhcNMTUwMjEyMDE0ODU2WhcNMTYwMjEyMDc0ODU2WjAvMS0wKwYDVQQDHiQATQBpAHIAYQBuAGQAYQAtAFAAQwBcAE0AaQByAGEAbgBkAGEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMZfrUvQRR9QFvTf1SMnmVCIiUKgkRVMIvYWi82hinoFlYoSq/qtwSHH5m9eJV2G5hWIwXIIwlQvX76kfGs7wTRcvDq+PJikC0rIbibMp5l5JfouvPuhYz4P7CS7q6CjRctNhQrndWCKrlfr8U1HgP+cFdD6OZTIFP4mL+KJUTvXAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAm6q2wJvkehFCc1a03W0DQ/KMn6R3LDbPbPEqDk3fB1PJfWUh2EaMaj0QYnStEm9nuBzM3kKCBnYtLMXsHrthzPGnBw3YkWS4IN59Hp1H1rpO/8ZY4Wk0JGnJqJLhUKUml4NwSKRNGSp8fpkROTFoFemUPxbXu80AsEthDPWm6tI=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

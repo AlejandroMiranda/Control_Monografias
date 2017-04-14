@@ -1,0 +1,51 @@
+D:\Documentos\Programas a vender\Monografias\Monografias\bin\Release\Monografias.exe.config
+D:\Documentos\Programas a vender\Monografias\Monografias\bin\Release\Monografias.exe
+D:\Documentos\Programas a vender\Monografias\Monografias\bin\Release\Monografias.pdb
+D:\Documentos\Programas a vender\Monografias\Monografias\bin\Release\Monografias.xml
+D:\Documentos\Programas a vender\Monografias\Monografias\bin\Release\MySql.Data.dll
+D:\Documentos\Programas a vender\Monografias\Monografias\obj\x86\Release\Monografias.Activacion.resources
+D:\Documentos\Programas a vender\Monografias\Monografias\obj\x86\Release\Monografias.Base_Datos.resources
+D:\Documentos\Programas a vender\Monografias\Monografias\obj\x86\Release\Monografias.Cnx_Remota.resources
+D:\Documentos\Programas a vender\Monografias\Monografias\obj\x86\Release\Monografias.AddLaminas.resources
+D:\Documentos\Programas a vender\Monografias\Monografias\obj\x86\Release\Monografias.DeleteLaminas.resources
+D:\Documentos\Programas a vender\Monografias\Monografias\obj\x86\Release\Monografias.Listado.resources
+D:\Documentos\Programas a vender\Monografias\Monografias\obj\x86\Release\Monografias.Modificar.resources
+D:\Documentos\Programas a vender\Monografias\Monografias\obj\x86\Release\Monografias.Resources.resources
+D:\Documentos\Programas a vender\Monografias\Monografias\obj\x86\Release\Monografias.principal.resources
+D:\Documentos\Programas a vender\Monografias\Monografias\obj\x86\Release\Monografias.vbproj.GenerateResource.Cache
+D:\Documentos\Programas a vender\Monografias\Monografias\obj\x86\Release\Monografias.exe
+D:\Documentos\Programas a vender\Monografias\Monografias\obj\x86\Release\Monografias.xml
+D:\Documentos\Programas a vender\Monografias\Monografias\obj\x86\Release\Monografias.pdb
+D:\Documentos\Programas a vender\Monografias\Monografias\bin\Release\Monografias.exe.manifest
+D:\Documentos\Programas a vender\Monografias\Monografias\bin\Release\Monografias.application
+D:\Documentos\Programas a vender\Monografias\Monografias\obj\x86\Release\Monografias.TrustInfo.xml
+D:\Documentos\Programas a vender\Monografias\Monografias\obj\x86\Release\Monografias.exe.manifest
+D:\Documentos\Programas a vender\Monografias\Monografias\obj\x86\Release\Monografias.application
+D:\Documentos\Programas a vender\Monografias\CntMon\Monografias\bin\Release\Monografias.exe.config
+D:\Documentos\Programas a vender\Monografias\CntMon\Monografias\obj\x86\Release\Monografias.exe
+D:\Documentos\Programas a vender\Monografias\CntMon\Monografias\obj\x86\Release\Monografias.xml
+D:\Documentos\Programas a vender\Monografias\CntMon\Monografias\obj\x86\Release\Monografias.pdb
+D:\Documentos\Programas a vender\Monografias\CntMon\Monografias\bin\Release\Monografias.exe
+D:\Documentos\Programas a vender\Monografias\CntMon\Monografias\bin\Release\Monografias.pdb
+D:\Documentos\Programas a vender\Monografias\CntMon\Monografias\bin\Release\Monografias.xml
+D:\Documentos\Programas a vender\Monografias\CntMon\Monografias\bin\Release\MySql.Data.dll
+D:\Documentos\Programas a vender\Monografias\CntMon\Monografias\obj\x86\Release\Monografias.Base_Datos.resources
+D:\Documentos\Programas a vender\Monografias\CntMon\Monografias\obj\x86\Release\Monografias.Cnx_Remota.resources
+D:\Documentos\Programas a vender\Monografias\CntMon\Monografias\obj\x86\Release\Monografias.AddLaminas.resources
+D:\Documentos\Programas a vender\Monografias\CntMon\Monografias\obj\x86\Release\Monografias.DeleteLaminas.resources
+D:\Documentos\Programas a vender\Monografias\CntMon\Monografias\obj\x86\Release\Monografias.Listado.resources
+D:\Documentos\Programas a vender\Monografias\CntMon\Monografias\obj\x86\Release\Monografias.Modificar.resources
+D:\Documentos\Programas a vender\Monografias\CntMon\Monografias\obj\x86\Release\Monografias.Resources.resources
+D:\Documentos\Programas a vender\Monografias\CntMon\Monografias\obj\x86\Release\Monografias.principal.resources
+D:\Documentos\Programas a vender\Monografias\CntMon\Monografias\obj\x86\Release\Monografias.vbproj.GenerateResource.Cache
+D:\Documentos\Programas a vender\Monografias\CntMon\Monografias\bin\Release\Activador.exe
+D:\Documentos\Programas a vender\Monografias\CntMon\Monografias\bin\Release\Activador.pdb
+D:\Documentos\Programas a vender\Monografias\CntMon\Monografias\bin\Release\Activador.xml
+D:\Documentos\Programas a vender\Monografias\CntMon\Monografias\obj\x86\Release\Monografias.vbprojResolveAssemblyReference.cache
+D:\Documentos\Programas a vender\Monografias\CntMon\Monografias\obj\x86\Release\Monografias.Act_Inventarios.resources
+D:\Documentos\Programas a vender\Monografias\CntMon\Monografias\obj\x86\Release\Monografias.Ventas.resources
+D:\Documentos\Programas a vender\Monografias\CntMon\Monografias\obj\x86\Release\Monografias.Busqueda.resources
+J:\Mis Archivos\Documentos\Programas a vender\Monografias\CntMon\Monografias\bin\Release\Monografias.exe.config
+J:\Mis Archivos\Documentos\Programas a vender\Monografias\CntMon\Monografias\obj\x86\Release\Monografias.exe
+J:\Mis Archivos\Documentos\Programas a vender\Monografias\CntMon\Monografias\obj\x86\Release\Monografias.xml
+J:\Mis Archivos\Documentos\Programas a vender\Monografias\CntMon\Monografias\obj\x86\Release\Monografias.pdb
